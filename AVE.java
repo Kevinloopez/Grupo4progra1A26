@@ -1,20 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+package proyecto_zooa;
 
-/**
- *
- * @author tonoc
- */
 public class Ave extends Animal {
+    
    
-    public Ave(String nombre, int edad, double consumoDiario) {
-        super(nombre, edad, consumoDiario);
+    public Ave(long idAnimal, String nombre, int edad, double consumoDiario) {
+        super(idAnimal, nombre, edad, consumoDiario);
     }
 
     public void comer() {
         System.out.println(nombre + " come semillas.");
     }
+    
+    @Override
+    public String getNombre(){
+        return super.getNombre();
+    }
+    
+    @Override
+    public int getEdad(){
+        return super.getEdad();
+    }
+    
+    @Override
+    public long getIdAnimal(){
+        return super.getIdAnimal();
+    }
 }
-
